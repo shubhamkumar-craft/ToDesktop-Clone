@@ -1,0 +1,868 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="output.css">
+   <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body class="overflow-x-hidden" >
+  <!-- bg-[#13473a] -->
+  <nav class=" px-4 py-2 bg-white flex  justify-between ">
+    <a class="flex items-center gap-2 " href="#">
+     <img class="w-9 h-10  " src="assets1/todesktop-logo.bn2Qe8sb.png" alt="logo">
+     <span class="font-shubham font-semibold ">ToDesktop</span>
+
+    </a> 
+    <div id="navmenu" class="hidden  md:flex items-center gap-10 font-shubham ">
+          <a class="hover:text-blue-800" href="#">Pricing</a>
+          <a class="hover:text-blue-800" href="#">Changelog</a>
+          <a class="hover:text-blue-800" href="#">Blog</a>
+          <a class="hover:text-blue-800" href="#">Login</a>
+
+      
+    </div>
+    <button id="electron" class="hidden md:flex items-center font-shubham border-solid border-2 border-black px-4 gap-2 rounded-md hover:border-blue-800 ">
+
+       <span>Electron Developer</span>
+       <i class="ri-arrow-right-line hover:text-blue-800 "></i>
+    
+    
+    </button>
+  <button class="md:hidden " onclick="handleMenu()">
+    <i  class="ri-menu-fill text-blue-800 "></i>
+  </button>
+
+  <div id="navDailog" class="hidden fixed z-10 inset-0 bg-white bg-opacity-100  md:hidden">
+   <!-- nav -->
+    <nav class=" px-4 py-2 bg-white flex  justify-between ">
+      <a class="flex items-center gap-2 " href="#">
+       <img class="w-9 h-10  " src="assets1/todesktop-logo.bn2Qe8sb.png" alt="logo">
+       <span class="font-shubham font-semibold ">Todesktop</span>
+  
+      </a> 
+      <button class="md:hidden" onclick="handleMenu()">
+        <i class="ri-close-large-line hover:text-red-600 "></i>
+      </button>
+</nav>
+      <div id="navmenu" class="grid  items-center gap-10 font-shubham pt-4 px-5 ">
+        <a class="hover:text-blue-800 hover:bg-slate-500" href="#">Pricing</a>
+        <a class="hover:text-blue-800 hover:bg-slate-500" href="#">Changelog</a>
+        <a class="hover:text-blue-800 hover:bg-slate-500" href="#">Blog</a>
+        <a class="hover:text-blue-800 hover:bg-slate-500" href="#">Login</a>
+
+   </div>
+<div class="h-[1px] bg-slate-500 mt-4"></div>
+<button id="electron" class="w-full flex items-center font-shubham font-bold px-4 mt-6 gap-2 rounded-md hover:bg-slate-500 ">
+  <span>Electron Developer</span>
+</button>
+  </div>
+  </nav>
+ 
+  <main>
+  <div id="hero" class=" min-h-screen bg-gradient-to-b from-pink-100 via-orange-100 to-transparent
+     pt-7 px-4 
+   sm:text-center " >
+   
+    <div id="hero-container" class=" h-6 w-fit bg-neutral-200  flex items-center gap-2 px-1 py-3  rounded-lg border-yellow-600 border-2 shadow-lg font-shubham
+      hover:-translate-y-3 transition hover:shadow-2xl group ml-2 mr-2      sm:items-center    ">
+      <div class=" h-2 w-2 bg-yellow-400 rounded-full " ></div>
+        <p class="text-yellow-700 " >v0.21.1: <span class="text-yellow-800 " > Find-in-page bug fixes</span> 
+          <i class="ri-arrow-right-line text-yellow-800  group-hover:translate-x-1 transition "></i>
+          </p>
+    </div>
+<!-- operating systems -->
+     <div class="hidden sm:flex h-12   mt-9  px-3 items-center gap-1  place-content-center " >
+     <i class="ri-file-pdf-2-fill "></i><span class="pr-5" >Code Optional</span>
+      <i class="ri-hand"></i> <span class="pr-5" >Drag & Drop Builder</span>
+      <i class="ri-macbook-fill"></i> <span class="pr-5" >Window, Mac, Linux</span>
+     </div>
+
+
+
+    <div id="hero2" class="" >
+    <h1 class="pt-12 px-3 font-shubham font-extrabold text-3xl sm:text-6xl sm:ml-10 sm:mr-10  ">Web app to desktop app in minutes</h1>
+    <p class="pt-7  px-3 sm:text-2xl sm:ml-10 sm:mr-10 ">Take your web app codebase and transform it into a 
+        cross platform desktop app with native functionallity. </p>
+    </div>
+    
+    <div id="button2" class="flex flex-col mt-14 gap-5 sm:flex-row place-content-center ">
+         <button class="bg-blue-800 px-2 py-2 font-shubham font-bold text-white rounded-xl 
+          border-s border-2 border-gray-700 hover:text-black hover:bg-blue-800 
+          sm:w-48 " >
+          Download Now</button>
+         <button class="bg-white px-2 py-2 font-shubham font-bold text-black rounded-xl 
+         border-s border-2 border-gray-700 hover:text-black hover:bg-blue-800 
+         sm:w-48 "  >Read Docs</button>
+
+    </div>
+
+          
+   <div id="compaines" class="flex place-content-center font-shubham font-medium gap-4 mt-44 ">
+        <i class=" ri-corner-left-down-line"></i>
+         <span>APPS POWERED BY ToDesktop</span>
+         <i class=" ri-corner-right-down-fill"></i>
+   </div>
+   <div id="companies-lines" class="flex flex-col gap-4 mt-10 " >
+   <div id="line1" class="flex gap-4  -translate-x-48 transition-transform ease-linear" >
+  <!-- line1 -->
+      <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+         bg-white md:min-h-32 md:min-w-32 " >
+        <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Beeper.vXFMsQ7M.png" alt="img">
+        <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Beeper</span>
+      </div>
+      <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+      bg-white md:min-h-32 md:min-w-32  " >
+     <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Basedash.3zVpqFz2.png" alt="img">
+     <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Basedash</span>
+   </div>  
+   <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+         bg-white md:min-h-32 md:min-w-32  " >
+        <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Rise._nYytet0.png" alt="img">
+        <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Rise</span>
+      </div>
+      <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+      bg-white md:min-h-32 md:min-w-32  " >
+     <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Slite.CUJ2gxTv.png" alt="img">
+     <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Slite</span>
+   </div>  
+   <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+         bg-white md:min-h-32 md:min-w-32  " >
+        <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Sunsama.sysR-7s-.png" alt="img">
+        <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Sunsama</span>
+      </div>
+      <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+      bg-white md:min-h-32 md:min-w-32  " >
+     <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Superpowered.tHC_RfpU.png" alt="img">
+     <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >powered</span>
+   </div>  
+   <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+         bg-white md:min-h-32 md:min-w-32  " >
+        <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-ClickUp.plcdS9Wy.png" alt="img">
+        <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Clickup</span>
+      </div>
+      <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+      bg-white md:min-h-32 md:min-w-32  " >
+     <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Conjure.cRVPwZgu.png" alt="img">
+     <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Conjure</span>
+   </div>  
+   <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+         bg-white md:min-h-32 md:min-w-32  " >
+        <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Bento.sWc6My29.avif" alt="img">
+        <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Bento</span>
+      </div>
+      <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+      bg-white md:min-h-32 md:min-w-32  " >
+     <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Convy.-nvozOOU.png" alt="img">
+     <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Convy</span>
+   </div>  
+   <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+         bg-white md:min-h-32 md:min-w-32  " >
+        <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Cron.LilezSwz.png" alt="img">
+        <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Corn</span>
+      </div>
+        <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+    bg-white md:min-h-32 md:min-w-32  " >
+   <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/todesktop-logo.bn2Qe8sb.png" alt="img">
+   <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >ToDesk</span>
+ </div>  
+   </div>
+   <!-- line2  -->
+   <div id="line2" class="flex gap-4 w-screen -translate-x-36 transition-transform ease-linear " >
+    
+        <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+           bg-white md:min-h-32 md:min-w-32  " >
+          <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Grain.b-czaeXc.png" alt="img">
+          <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Grain</span>
+        </div>
+        <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+        bg-white md:min-h-32 md:min-w-32  " >
+       <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Kitemaker.T5qcAjAr.png" alt="img">
+       <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Kitemaker</span>
+     </div>  
+     <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+           bg-white md:min-h-32 md:min-w-32  " >
+          <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-LifeAt.-Gg__Z7j (1).png" alt="img">
+          <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >LifeAT</span>
+        </div>
+        <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+        bg-white md:min-h-32 md:min-w-32  " >
+       <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Beeper.vXFMsQ7M.png" alt="img">
+       <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Beeper</span>
+     </div>  
+     <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+           bg-white md:min-h-32 md:min-w-32  " >
+          <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Linear.BJ6nQ1Yg.png" alt="img">
+          <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Linear</span>
+        </div>
+        <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+        bg-white md:min-h-32 md:min-w-32  " >
+       <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Modyfi.XB7uNI0T.png" alt="img">
+       <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Modyfi</span>
+     </div>  
+     <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+           bg-white md:min-h-32 md:min-w-32  " >
+          <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Moises.AiW9adgp.png" alt="img">
+          <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Moises</span>
+        </div>
+        <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+        bg-white md:min-h-32 md:min-w-32  " >
+       <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Morgen.T902B6yE (1).png" alt="img">
+       <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Morgen</span>
+     </div>  
+     <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+           bg-white md:min-h-32 md:min-w-32  " >
+          <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-NotionCalendar.RC5iC-Ww.png" alt="img">
+          <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Calender</span>
+        </div>
+        <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+        bg-white md:min-h-32 md:min-w-32  " >
+       <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-ReadyRunner.E1mlS2ng.png" alt="img">
+       <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Runner</span>
+     </div>  
+     <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+           bg-white md:min-h-32 md:min-w-32  " >
+          <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Rise._nYytet0.png" alt="img">
+          <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Rise</span>
+        </div>
+        <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+        bg-white md:min-h-32 md:min-w-32  " >
+       <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Slite.CUJ2gxTv.png" alt="img">
+       <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Slite</span>
+     </div>  
+     </div>
+   
+      <!-- line3  -->
+   <div id="line3" class="md:hidden flex gap-4 w-screen -translate-x-48 transition-transform ease-linear " >
+    
+    <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+       bg-white " >
+      <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Sunsama.sysR-7s-.png" alt="img">
+      <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Sunsama</span>
+    </div>
+    <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+    bg-white " >
+   <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Superpowered.tHC_RfpU.png" alt="img">
+   <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Superpowerd</span>
+ </div>  
+ <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+       bg-white " >
+      <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Typefully.4TRxK4Xu.png" alt="img">
+      <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Typefully</span>
+    </div>
+    <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+    bg-white " >
+   <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Unbounce.P8n0k4Cq.png" alt="img">
+   <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Unbounce</span>
+ </div>  
+ <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+       bg-white " >
+      <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Voiceflow.VziEVPjD.png" alt="img">
+      <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Voiceflow</span>
+    </div>
+    <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+    bg-white " >
+   <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Webstudio.zTfi1fj8.png" alt="img">
+   <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Webstudio</span>
+ </div>  
+ <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+       bg-white " >
+      <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Grain.b-czaeXc.png" alt="img">
+      <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Grain</span>
+    </div>
+    <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+    bg-white " >
+   <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/todesktop-logo.bn2Qe8sb.png" alt="img">
+   <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >ToDesk</span>
+ </div>  
+ <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+       bg-white " >
+      <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Cal.tNj98lGU.png" alt="img">
+      <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Cal</span>
+    </div>
+    <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+    bg-white " >
+   <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Campsite.zLN9hc3H.png" alt="img">
+   <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Campsite</span>
+ </div>  
+ <div class="flex flex-col justify-center items-center min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+       bg-white " >
+      <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Grain.b-czaeXc.png" alt="img">
+      <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Grain</span>
+    </div>
+    <div class="flex flex-col justify-center items-center  min-w-24  min-h-24 border-s border-2 border-gray-400 rounded-xl 
+    bg-white " >
+   <img class="h-12 w-12 md:h-16 md:w-16  " src="assets1/customer-logo-Unbounce.P8n0k4Cq.png" alt="img">
+   <span class="text-[12px] md:text-[16px] font-semibold font-shubham " >Unbounce</span>
+ </div>  
+ </div> 
+  </div>
+
+  <!-- step-by-step-1  -->
+         
+<div class="h-40 mt-36 flex items-center px-6 py-6  "> 
+   <h1 class="font-shubham font-extrabold text-5xl " >How its Works</h1>      
+</div>
+ 
+<div id="step1"  class="rounded-xl border-s border-2 px-8
+  py-20 flex flex-col lg:flex-row "    >
+    <div id="left" class=" flex flex-col  gap-6   "   >
+        <span class="font-shubham font-semibold bg-yellow-200 px-4 py-1 w-fit
+        text-amber-900 border-s border-2 rounded-lg border-yellow-600  " >Step 1</span>         
+      <h2 class="font-shubham font-extrabold text-4xl mt-5   " > Bootstrap straight from your web app</h1>
+      <p class="mt-4 font-shubham font-semibold text-gray-900 " >Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+       
+      <!-- ul  -->
+      <ul class="grid grid-cols-2 gap-2" >
+        <li class="flex gap-4" >
+          <i class="ri-check-fill text-gray-600 "></i>
+          <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Multiple window</a>
+        </li>
+
+        <li class="flex gap-4" >
+          <i class="ri-check-fill text-gray-600 "></i>
+          <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Customisable menus</a>
+        </li>
+
+        <li class="flex gap-4" >
+          <i class="ri-check-fill text-gray-600 "></i>
+          <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Menubar/tray menus</a>
+        </li>
+
+        <li class="flex gap-4" >
+          <i class="ri-check-fill text-gray-600 "></i>
+          <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Launch on startup</a>
+        </li>
+        <li class="flex gap-4" >
+          <i class="ri-check-fill text-gray-600 "></i>
+          <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Offline support</a>
+        </li>
+        <li class="flex gap-4" >
+          <i class="ri-check-fill text-gray-600 "></i>
+          <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Tabs (Mac only)</a>
+        </li>
+      </ul>
+      </div>
+
+
+    <div id="right" class="pt-4 lg:h-1/4" > <!-- image  -->
+      
+        <img src="assets1/svg+xml;base64,PHN2ZyB3aWR0aD0iNDU2IiBoZWlnaHQ9IjM1NiIgdmlld0JveD0iMCAwIDQ1NiAzNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9InN2ZWx0ZS0xaTI5ODhrIGFjdGl2ZSI+PGcgY2xhc3M9ImFuaW1hdGUtZGVsYXkxIHN2ZWx0ZS0xaTI5ODhrIj48cmVjdCB4.svg" alt="img">
+
+    </div>
+
+
+</div>
+
+<!-- step-2  -->
+<div id="step2"  class="rounded-xl border-s border-2 px-8 mt-10
+ py-20 flex flex-col lg:flex-row "    >
+   <div id="left" class=" flex flex-col  gap-6   "   >
+       <span class="font-shubham font-semibold bg-yellow-200 px-4 py-1 w-fit
+       text-amber-900 border-s border-2 rounded-lg border-yellow-600  " >Step 2</span>         
+     <h2 class="font-shubham font-extrabold text-4xl mt-5   " > Add desktop code to customise your web app</h1>
+     <p class="mt-4 font-shubham font-semibold text-gray-900 " >No need to create a new repository, just add code from our desktop APIs to your codebase and get access to system level functionality.</p>
+      
+     <!-- ul  -->
+     <ul class="grid grid-cols-2 gap-2" >
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Native notifications</a>
+       </li>
+
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Global keyboard shortcuts</a>
+       </li>
+
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Application menu</a>
+       </li>
+
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Context menu</a>
+       </li>
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Dock/Icon</a>
+       </li>
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Isolated browser views</a>
+       </li>
+       <li class="flex gap-4" >
+        <i class="ri-check-fill text-gray-600 "></i>
+        <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >File system access</a>
+      </li>
+      <li class="flex gap-4" >
+        <i class="ri-check-fill text-gray-600 "></i>
+        <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >...plus more APIs in our docs</a>
+      </li>
+     </ul>
+     </div>
+
+
+   <div id="right" class="pt-4 lg:h-1/4" > <!-- image  -->
+     
+       <img src="assets1/svg+xml;base64,PHN2ZyB3aWR0aD0iNDU2IiBoZWlnaHQ9IjM1NiIgdmlld0JveD0iMCAwIDQ1NiAzNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9InN2ZWx0ZS0xaTI5ODhrIGFjdGl2ZSI+PGcgY2xhc3M9ImFuaW1hdGUtZGVsYXkxIHN2ZWx0ZS0xaTI5ODhrIj48cmVjdCB4.svg" alt="img">
+
+   </div>
+
+
+</div>
+
+<!-- step-3 -->
+<div id="step3"  class="rounded-xl border-s border-2 px-8 mt-10
+ py-20 flex flex-col lg:flex-row "    >
+   <div id="left" class=" flex flex-col  gap-6   "   >
+       <span class="font-shubham font-semibold bg-yellow-200 px-4 py-1 w-fit
+       text-amber-900 border-s border-2 rounded-lg border-yellow-600  " >Step 3</span>         
+     <h2 class="font-shubham font-extrabold text-4xl mt-5   " > Add desktop code to customise your web app</h1>
+     <p class="mt-4 font-shubham font-semibold text-gray-900 " >No need to create a new repository, just add code from our desktop APIs to your codebase and get access to system level functionality.</p>
+      
+     <!-- ul  -->
+     <ul class="grid grid-cols-2 gap-2" >
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Native notifications</a>
+       </li>
+
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Global keyboard shortcuts</a>
+       </li>
+
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Application menu</a>
+       </li>
+
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Context menu</a>
+       </li>
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Dock/Icon</a>
+       </li>
+       <li class="flex gap-4" >
+         <i class="ri-check-fill text-gray-600 "></i>
+         <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >Isolated browser views</a>
+       </li>
+       <li class="flex gap-4" >
+        <i class="ri-check-fill text-gray-600 "></i>
+        <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >File system access</a>
+      </li>
+      <li class="flex gap-4" >
+        <i class="ri-check-fill text-gray-600 "></i>
+        <a href="#" class=" underline underline-offset-4  font-shubham font-light  hover:underline-offset-8  " >...plus more APIs in our docs</a>
+      </li>
+     </ul>
+     </div>
+
+
+   <div id="right" class="pt-7 lg:h-1/4" > <!-- image  -->
+     
+       <img src="assets1/svg+xml;base64,PHN2ZyB3aWR0aD0iNDU2IiBoZWlnaHQ9IjM1NiIgdmlld0JveD0iMCAwIDQ1NiAzNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9InN2ZWx0ZS0xaTI5ODhrIGFjdGl2ZSI+PGcgY2xhc3M9ImFuaW1hdGUtZGVsYXkxIHN2ZWx0ZS0xaTI5ODhrIj48cmVjdCB4.svg" alt="img">
+
+   </div>
+
+
+</div>
+
+ <!-- details  -->
+   <div class=" px-3 py-3 mt-16 bg-white flex flex-col items-start justify-start gap-3  
+    "  >
+       <h2 class="font-shubham font-bold text-5xl " >ToDesktop handle</h2>
+       <h2 class="font-shubham font-bold text-5xl "  >the details</h2>
+   </div>
+  
+   <div id="detailscontent" class=" mt-2 flex flex-col gap-6 
+   lg:grid lg:grid-cols-3 " style="grid-auto-rows:96px;"  >
+      
+    <div class="row-start-1 row-end-3  flex flex-col items-center px-3 py-5 w-full h-full rounded-2xl bg-slate-50  gap-6
+     border-s border-[1px] border-red-600 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-50 ">
+      <h3 class="font-shubham font-semibold" >Native notifications</h3>
+      <img   src="assets1/notifications@3x.png" alt="img">
+    </div>
+     
+    <div class="row-start-1 row-end-4 flex flex-col items-center px-3 py-5 w-full h-full rounded-2xl bg-slate-50  gap-6
+    border-s border-[1px] border-red-600 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-50 ">
+     <h3 class="font-shubham font-semibold" >Auto Updates</h3>
+     <p class="text-lg " >We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
+     <img   src="assets1/auto-updates@3x.png" alt="img">
+   </div>
+
+   <div class="row-start-1 row-end-3 flex flex-col items-center px-3 py-5 w-full h-full rounded-2xl bg-slate-50  gap-6
+   border-s border-[1px] border-red-600 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-50 ">
+    <h3 class="font-shubham font-semibold" >Plugins</h3>
+    <img   src="assets1/plugins@3x.png" alt="img">
+  </div>
+  <div class="row-start-3 row-end-6 flex flex-col items-center px-3 py-5 w-full h-full rounded-2xl bg-slate-50  gap-6
+  border-s border-[1px] border-red-600 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-50 ">
+   <h3 class="font-shubham font-semibold" >Access to Access to Native APIs</h3>
+   <p class="text-lg "  >ToDesktop ensures the underlying browser, performance improvements, security patches and additional features are always up to date.
+    </p>
+   <img   src="assets1/apis@3x.png" alt="img">
+ </div>
+ <div class="row-start-4 row-end-6 flex flex-col items-center px-3 py-5 w-full h-full rounded-2xl bg-slate-50  gap-6
+ border-s border-[1px] border-red-600 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-50 ">
+  <h3 class="font-shubham font-semibold" >Customizable look and feel</h3>
+  <img   src="assets1/look-and-feel@3x.png" alt="img">
+  </div>
+  <div class="row-start-3 row-end-6 flex flex-col items-center px-3 py-5 w-full h-full rounded-2xl bg-slate-50  gap-6
+ border-s border-[1px] border-red-600 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-50 ">
+  <h3 class="font-shubham font-semibold" >Native Installers</h3>
+  <p class="text-lg "  >We even provide a magic link which will detect your users operating system & download the most up to date version of your app.</p>
+  <img   src="assets1/installers@3x.png" alt="img">
+</div>
+   </div>
+
+<div class="container " id="companies-features-lines">
+  <div class="mt-16 border-[1px] boder-s border-gray-400 rounded-lg overflow-hidden bg-white "  >
+     <div id="line4" class="flex items-center gap-16 py-6  " >
+      <h3 class="whitespace-nowrap font-shubham text-2xl font-bold" > Code Signing</h3>
+     
+      <h3 class="whitespace-nowrap font-shubham text-2xl font-bold" > Offline Support</h3>
+      <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Download Analytics</h3>
+      <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Global Hotkeys</h3>
+      <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Custom Menu</h3>
+      <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Multi-Windows support</h3>
+      <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Trays</h3>
+   <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Deep Linking</h3>
+   <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Launch at startup</h3>
+
+   
+   <h3 class="whitespace-nowrap font-shubham text-2xl font-bold" > Offline Support</h3>
+   <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Download Analytics</h3>
+   <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Global Hotkeys</h3>
+   <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Custom Menu</h3>
+   <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Multi-Windows support</h3>
+   <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Multi-Windows support</h3>
+   <h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Trays</h3>
+<h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Deep Linking</h3>
+<h3 class="whitespace-nowrap font-shubham text-2xl font-bold">Launch at startup</h3>
+</div>    
+  </div>
+</div>
+   
+<!-- customer stories  -->
+ <div class="mt-8 px-2 py-8 rounded-lg bg-white font-shubham font-bold text-4xl flex justify-start " >
+     <h3>Customer Stroies</h3>
+ </div>
+ <div class="flex flex-col border-s border-[1px] border-gray-500 rounded-xl  bg-white lg:flex-row " >
+   <div class="flex flex-col  px-3 py-2 " id="left">
+      <img class="h-[140px] w-[140px] " src="assets1/ClickUp-Logo.odzVA-s0.svg" alt="img">
+     <div class="" >
+      <h3 class="font-shubham font-bold text-2xl gap-2 text-start " >ClickUp used ToDesktop to get their desktop  app in front of customers in days instead of months.</h3>
+     </div>
+     <ul class="grid grid-cols-1 gap-3 mt-7 lg:grid-cols-2 " >
+      <li class="flex justify-center items-center w-fit gap-1 border-s border-[1px]  bg-orange-200 border-yellow-600 rounded-xl px-5 py-1 " >
+        <i class="ri-check-fill text-yellow-800 font-bold "></i>
+      <a class="font-shubham font-semibold text-yellow-800 text-nowrap" href="#">Chromeless UI</a>
+      </li>
+      <li class="flex justify-center items-center gap-1 border-s border-[1px] bg-orange-200 border-yellow-600 rounded-xl w-fit px-5 py-2 " >
+        <i class="ri-check-fill text-yellow-800 font-bold "></i>
+      <a class="font-shubham font-semibold text-yellow-800 text-nowrap" href="#">
+        Native spellcheck</a>
+      </li>
+      <li class="flex justify-center items-center gap-3 border-s border-[1px] bg-orange-200 border-yellow-600 rounded-xl w-fit px-5 py-2 " >
+        <i class="ri-check-fill text-yellow-800 font-bold "></i>
+      <a class="font-shubham font-semibold text-yellow-800 text-nowrap" href="#">Task time in menubar</a>
+      </li>
+      <li class="flex justify-center items-center gap-3 border-s border-[1px] bg-orange-200 border-yellow-600 rounded-xl w-fit px-5 py-2 " >
+        <i class="ri-check-fill text-yellow-800 font-bold "></i>
+      <a class="font-shubham font-semibold text-yellow-800 text-nowrap" href="#">Notification count in the dock
+      </a>
+      </li>
+      <li class="flex justify-center items-center gap-3 border-s border-[1px] bg-orange-200 border-yellow-600 rounded-xl w-fit px-5 py-2 " >
+        <i class="ri-check-fill text-yellow-800 font-bold "></i>
+      <a class="font-shubham font-semibold text-yellow-800 text-nowrap" href="#">Global hotkey to create task
+      </a>
+      </li>
+     </ul>
+
+     <div class="mt-10  " >
+      <p class="font-shubham font-semibold text-gray-600 text-xl text-start " >
+        “ToDesktop provided us with a polished desktop app in no time. Their expert team guided us through a smooth migration from our outdated legacy desktop app, enabling us to deliver new and improved features to our customers within days.”</p>
+     </div>
+     <div class="flex gap-4 items-center justify-start mt-5  w-fit px-3 py-3 " >
+      <img class="rounded-full" src="assets1/zeb.Dy2mfRM8.jpeg" alt="">
+      <span class="font-shubham font-bold text-start " >Zeb Evans <br> Founder & CEO, ClickUp</span>
+     </div>
+   </div>
+   <div id="right" class="pt-16 pl-16 py-2" >
+    <img src="assets1/Customer-Story-ClickUp.6otznAf7.png" alt="">
+   </div>
+ </div>
+ <!-- next -->
+     <div class="flex flex-col lg:grid lg:grid-cols-3    lg:gap-4" >
+      <div id="first" class="border-[1px] rounded-lg border-gray-600 text-start font-shubham mt-10 px-7 py-7 bg-slate-50 hover:bg-purple-100 " >
+          <h1 class=" font-shubham font-bold text-2xl ">Native APIs</h1>
+
+          <p class="mt-6 font-shubham font-semibold  text-gray-700">"What sets ToDesktop apart is its seamless
+             integration with native APIs using our existing web codebase. By tapping into APIs like Tray and Notifications, we've crafted an exceptionally polished desktop user experience. ”</p>
+             <div class="flex gap-4 items-center justify-start mt-5  w-fit px-3 py-3 " >
+              <img class="rounded-full" src="assets1/Rick.d7xHnafE.jpg" alt="">
+              <span class="font-shubham font-bold text-start " >Rick Pastoor <br> Rise</span>
+             </div>
+            </div>
+           
+            <div id="first" class="border-[1px] rounded-lg border-gray-600 text-start font-shubham mt-10 px-7 py-7 bg-slate-50 hover:bg-purple-100 " >
+              <h1 class=" font-shubham font-bold text-2xl ">
+                Cleaner, less cluttered UI </h1>
+    
+              <p class="mt-6 font-shubham font-semibold  text-gray-700">
+              “Having a desktop app gives us the freedom to design the experience we want, including better keyboard shortcuts and a cleaner UI. It was a no-brainer for us to use ToDesktop. ” </p>
+                 <div class="flex gap-4 items-center justify-start mt-5  w-fit px-3 py-3  lg:pt-12 " >
+                  <img class="rounded-full" src="assets1/Max.V2rqrzg6.jpg" alt="">
+                  <span class="font-shubham font-bold text-start " > Max Musing <br> Basedash </span>
+                 </div>
+                </div>
+                <div id="first" class="border-[1px] rounded-lg border-gray-600 text-start font-shubham mt-10 px-7 py-7 bg-slate-50 hover:bg-purple-100 " >
+                  <h1 class=" font-shubham font-bold text-2xl ">Code Optional</h1>
+        
+                  <p class="mt-6 font-shubham font-semibold  text-gray-700"> 
+                    “It was unbelievably simple for us to get a desktop app up and running, and we didn’t have to write a single line of code. Once we had this MVP, we were able to extend the app’s functionality with custom behavior using ToDesktop’s libraries. ” </p>
+                     <div class="flex gap-4 items-center justify-start mt-5  w-fit px-3 py-3 " >
+                      <img class="rounded-full" src="assets1/Pouya.Q0zAbZRS.jpg" alt="">
+                      <span class="font-shubham font-bold text-start " >Pouya Rad <br> LifeAt</span>
+                     </div>
+                    </div>
+     </div>
+<!-- desktop  -->
+ <div>
+  <!-- work  -->
+ </div>
+
+ <!-- membership -->
+<div class="mt-36  px-3  py-6 bg-slate-50 flex-row lg:flex lg:justify-between ">
+  <h1 class="text-start font-shubham font-extrabold text-5xl  " >Choose a plan that fits <br> your needs</h1>
+  <div class="flex mt-10 w-fit border-[1px] rounded-lg  ">
+     <button class="bg-white px-12 py-3 text-gray-800 font-shubham font-semibold hover:bg-slate-200 hover:shadow-lg " >Monthly</button>
+     <button class="bg-white px-12 py-3 text-gray-800 font-shubham font-semibold hover:bg-slate-200 hover:shadow-lg " >Yearly
+     <span class="bg-gray-500 px-2 py-2 rounded-xl text-blue-900" >-20%</span> </button>
+    </div>
+</div>
+
+ <div class="flex flex-col mt-16 bg-slate-50 text-start gap-5 lg:grid lg:grid-cols-3  " >
+       <div class="px-8 py-10 border-[1px] border-gray-500 rounded-xl" >
+        <h2 class="font-shubham font-bold text-4xl " >Free</h2>
+        <p class="mt-8 font-shubham font-medium text-lg text-gray-600 " >For personal use or testing your app before deploying to customers.</p>
+        <h3 class="mt-8 font-shubham font-medium text-lg text-gray-600 " >KEY FEATURES</h3>
+        <ul class="mt-5 grid gap-2" >
+          <li>
+          <i class="ri-check-fill text-gray-700 font-bold "></i>  
+          <span class="font-semibold text-gray-700 " >Free for personal use
+          </span>
+          </li>
+
+        
+        <li>
+          <i class="ri-check-fill text-gray-700 font-bold "></i>  
+          <span class="font-semibold text-gray-700 ">Run app locally
+          </span>
+          </li><li>
+            <i class="ri-close-line font-bold text-gray-700 "></i>
+                        <span class="font-semibold text-gray-700 ">No Code Signing
+
+            </span>
+            </li><li>
+              <i class="ri-close-line font-bold text-gray-700"></i>
+              <span class="font-semibold text-gray-700 ">No Native Installers
+
+              </span>
+              </li>
+
+        </ul>
+        <button class="text-xl text-blue-800 font-shubham border-[1px] px-5 py-3 min-w-full border-gray-400 rounded-xl mt-7 hover:bg-slate-100 lg:mt-12 " >Get Started</button>
+            </div>
+
+
+            <div class="flex flex-col px-8 py-10 border-[1px] border-gray-500 rounded-xl" >
+              <h2 class="font-shubham font-bold text-4xl " >Essential </h2>
+              <p class="mt-8 font-shubham font-medium text-lg text-gray-600 " >For simple desktop apps.</p>
+              <h2 class="font-shubham font-bold text-2xl  mt-4  " >$100 <span class="text-gray-700 text-lg" >/months</span> </h2>
+              <h3 class="mt-8 font-shubham font-medium text-lg text-gray-600 " >KEY FEATURES</h3>
+              <ul class="mt-5 grid gap-2" >
+                <li>
+                <i class="ri-check-fill text-gray-700 font-bold "></i>  
+                <span class="font-semibold text-gray-700 " >Windows, Mac & Linux
+                </span>
+                </li>
+      
+              
+              <li>
+                <i class="ri-check-fill text-gray-700 font-bold "></i>  
+                <span class="font-semibold text-gray-700 ">Code Signing
+                </span>
+                </li><li>
+                  <i class="ri-check-fill font-bold text-gray-700 "></i>
+                              <span class="font-semibold text-gray-700 ">Native Installers
+
+      
+                  </span>
+                  </li><li>
+                    <i class="ri-check-fill font-bold text-gray-700"></i>
+                    <span class="font-semibold text-gray-700 ">Email/chat support
+
+      
+                    </span>
+                    </li>
+      
+              </ul>
+              <button class="text-xl text-blue-800 font-shubham border-[1px] px-5 py-3 min-w-full border-gray-400 rounded-xl mt-7  hover:bg-slate-100  " >Get Started</button>
+                  </div>
+                  <div class="px-8 py-10 border-[1px] border-gray-500 rounded-xl" >
+                    <h2 class="font-shubham font-bold text-4xl " >Professional                    </h2>
+                    <p class="mt-8 font-shubham font-medium text-lg text-gray-600 " >For sophisticated desktop apps.                    </p>
+                    <h2 class="font-shubham font-bold text-2xl  mt-4  " >$240 <span class="text-gray-700 text-lg" >/months</span> </h2>
+                    <h3 class="mt-8 font-shubham font-medium text-lg text-gray-600 " >Everything in Essential Plus                    </h3>
+                    <ul class="mt-5 grid gap-2" >
+                      <li>
+                      <i class="ri-check-fill text-gray-700 font-bold "></i>  
+                      <span class="font-semibold text-gray-700 " >Branded Download links
+                      </span>
+                      </li>
+            
+                    
+                    <li>
+                      <i class="ri-check-fill text-gray-700 font-bold "></i>  
+                      <span class="font-semibold text-gray-700 ">Analytics
+                      </span>
+                      </li><li>
+                        <i class="ri-check-fill font-bold text-gray-700 "></i>
+                                    <span class="font-semibold text-gray-700 ">Access to Plugins
+            
+                        </span>
+                        </li><li>
+                          <i class="ri-check-fill font-bold text-gray-700"></i>
+                          <span class="font-semibold text-gray-700 ">Access to restricted API
+            
+                          </span>
+                          </li>
+            
+                    </ul>
+                    <button class="text-x font-shubham border-[1px] px-5 py-3 min-w-full border-gray-400 rounded-xl mt-7 bg-blue-600 text-white hover:bg-blue-800 " >Get Started</button>
+                        </div>
+ </div>
+
+ <!-- support -->
+  <div class="px-8 py-5 flex flex-col mt-12 bg-gray-900 text-white border-[1px] rounded-xl text-start  " >
+       <h3 class="font-shubham font-semibold" >Dedicated support and expert guidance.      </h3>
+       <h1 class="mt-5 font-shubham font-extrabold text-4xl ">Enterprise</h1>
+       <div class="lg:flex lg:flex-cols lg:justify-between  ">
+      <div class="">
+       <ul class="mt-5 grid gap-2 lg:grid lg:grid-cols-2 lg:gap-6 " >
+        <li>
+        <i class="ri-check-fill text-white font-bold "></i>  
+        <span class="font-semibold text-white font-shubham " >Whiteglove onboarding
+
+        </span>
+        </li>
+
+      
+      <li>
+        <i class="ri-check-fill text-white font-bold "></i>  
+        <span class="font-semibold text-white font-shubham ">Custom features
+
+        </span>
+        </li><li>
+          <i class="ri-check-fill font-bold text-white "></i>
+                      <span class="font-semibold text-white ">Priority support
+
+
+
+          </span>
+          </li><li>
+            <i class="ri-check-fill font-bold text-white"></i>
+            <span class="font-semibold text-white ">Shared Slack channel
+
+
+
+            </span>
+            </li>
+            <li>
+              <i class="ri-check-fill font-bold text-white"></i>
+              <span class="font-semibold text-white ">Dedicated account manager
+
+  
+  
+  
+              </span>
+              </li>
+              <li>
+                <i class="ri-check-fill font-bold text-white"></i>
+                <span class="font-semibold text-white ">Custom Billing
+    
+    
+    
+                </span>
+                </li>
+      </ul>
+</div>
+
+      <div class="px-8 py-10 mt-6 bg-white rounded-xl text-center lg:w-96  ">
+        <p class="text-gray-600 font-semibold  ">Secure, reliable cross-platform desktop apps for enterprise teams</p>
+         <button class="bg-blue-700 text-white min-w-full px-5 py-3 mt-8 rounded-xl  font-shubham text-xl hover:bg-blue-800" >Contact Sales</button>
+        <p class="mt-5 text-gray-600 text-sm ">You may also live chat with us by   
+       <a href="#"> <span class="text-sm text-black underline underline-offset-1 " >Clicking here.</span> </a> </p>  
+        </div>
+       </div>
+
+  </div>
+
+
+ <footer>
+  <div class="grid mt-10 bg-white rounded-xl  justify-center px-8 py-7 lg:flex  lg:justify-between lg:flex-row-reverse ">
+    <div class="flex gap-7 text-4xl px-5 py-5 " > 
+      <a href="#"><i class="ri-twitter-fill"></i> </a>
+      <a href="#"><i class="ri-github-fill"></i> </a>
+</div>
+    <div class="px-4 py-5 " >
+     <a href="#"><h2 class="font-shubham font-bold text-gray-700  ">Documentation</h2> </a>
+    </div>
+   
+    <div class="px-4 py-5 ">
+      <a class="flex items-center gap-2 " href="#">
+        <img class="w-9 h-10  " src="assets1/todesktop-logo.bn2Qe8sb.png" alt="logo">
+        <span class="font-shubham font-semibold ">ToDesktop</span>
+   
+       </a> 
+    </div>
+  </div>
+ </footer>
+ <!-- subfooter -->
+  <div class="grid  mt-8 px-4 py-5 justify-center" >
+    <div class="flex gap-2 px-4 py-2 font-shubham font-semibold ">
+      <img class="w-[20px] h-[20px] " src="assets1/y-combinator-logo.VDo9bew9.svg" alt="y-combinator">
+      <h2>A Y Combinator company.      </h2>
+       
+    </div>
+         <p>© 2025 ToDesktop, Inc. All rights reserved.</p>
+  </div>
+  
+ 
+  </div>
+ </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body> 
+<script src="script.js"></script>
+</html>
